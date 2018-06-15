@@ -1,0 +1,115 @@
+.header {
+  height : 200px;
+  background: #33363b ;
+  text-align: center;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.title {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  margin: auto;
+  color: white;
+}
+
+.taskToggleButton {
+  position : absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 60px;
+  color : white;
+  background: #004d80;
+  border-radius: 30px;
+  font-size: 20px;
+  transition: background 0.25s, color 0.5s, font-size 0.25s;
+}
+
+.taskToggleButton:hover {
+  background: #fff;
+  color: #004d80;
+  font-size: 25px;
+}
+
+.taskToggleButton:focus {
+  outline: none;
+}
+
+.card {
+  position: relative;
+  border: 2px solid #eee;
+  margin: 10px auto;
+  height: 80px;
+  width: 70%;
+  transition: height 0.25s, width 0.3s, border 1s;
+}
+
+.card p {
+  position : absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 0;
+  text-align: center;
+}
+
+.card:hover {
+  border: 2px solid #004d80;
+  font-size: 18px;
+  height: 100px;
+  width: 75%;
+  /* background: linear-gradient(to right, #004d80, white); */
+}
+
+.name {
+  font-size: 20px;
+  color : #444 ;
+}
+
+.town {
+  color : #999 ;
+}
+
+.inputGraber {
+  position: relative;
+}
+
+.inputGraber div {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+input {
+  display: block;
+  border: 1px solid #ddd;
+  padding-left: 10px;
+  width: 325px;
+  height: 44px;
+  margin: 20px auto;
+  font-size: 20px;
+}
+
+.addTask {
+  display: block;
+  width: 338px;
+  height: 44px;
+  margin: 20px auto;
+  font-size: 18px;
+  background: #ddd;
+  border: 2px solid #ddd;
+  color: black;
+  transition: border 0.5s, background 0.5s, width 0.5s;
+}
+
+.addTask:hover {
+  border: 2px solid #004d80;
+  background: white;
+  color: #004d80;
+  font-weight: bolder;
+}
